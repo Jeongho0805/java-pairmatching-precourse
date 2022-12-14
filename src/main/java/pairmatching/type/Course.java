@@ -1,5 +1,8 @@
 package pairmatching.type;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public enum Course {
 
     BACKEND("백엔드"),
@@ -13,5 +16,13 @@ public enum Course {
 
     public String getName() {
         return name;
+    }
+
+    public static List<String> getCourseNames() {
+        List<String> courseNames = new ArrayList<>();
+        for (Course course : Course.values()) {
+            courseNames.add(course.getName());
+        }
+        return courseNames;
     }
 }

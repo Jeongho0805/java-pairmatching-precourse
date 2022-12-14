@@ -5,9 +5,10 @@ import java.util.List;
 
 public enum Function {
 
-    ONE("1"),
-    TWO("2"),
-    THREE("3"),
+    MATCH_PAIR("1"),
+    INQUIRE_PAIR("2"),
+
+    INIT_PAIR("3"),
     QUIT("Q");
 
     private final String function;
